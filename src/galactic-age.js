@@ -22,6 +22,7 @@ export class GalacticAge
 
     let differenceInSeconds = yearDifference + monthDifference + dayDifference;
     this.earthSeconds = differenceInSeconds;
+
     return differenceInSeconds;
   }
   ConvertBackToYears()
@@ -29,4 +30,21 @@ export class GalacticAge
     let ageInYears = ((((this.earthSeconds / 60) / 60) / 24) / 365);
     return parseFloat(ageInYears.toFixed(2));
   }
+  MercuryAgeInSeconds()
+  {
+
+  }
+  VenusAgeInSeconds()
+  {
+
+  }
+  MarsAgeInSeconds()
+  {
+
+  }
+  JupiterAgeInSeconds()
+  {
+
+  }
+
 }
