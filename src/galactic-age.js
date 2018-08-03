@@ -9,7 +9,7 @@ export class GalacticAge
   }
   GetAgeInSeconds()
   {
-    return 0;
+    let ageInSeconds = ((((this.earthAge * 365) * 24) * 60) * 60);
+    return ageInSeconds;
   }
-
 }
