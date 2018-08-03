@@ -16,27 +16,31 @@ describe('GalacticAge', function()
   it('should test if the ConvertBackToYears method correctly returns the number of years baseed on how many seconds are in a GalacticAge', function()
   {
     let testDate = new GalacticAge(0, 0, 0, 0, 82339200);
-    expect(2.61).toEqual(testDate.ConvertBackToYears());
+    expect(2.61).toEqual(testDate.ConvertBackToEarthYears());
   });
   it('should test if the MercuryAgeInSeconds method correctly converts a GalacticAges earthSeconds to Mercury seconds', function()
   {
-    let testAge = (30, 1987, 10, 10, 971827200);
-    expect(4049280000).toEqual(testAge.MercuryAgeInSeconds())
+    let testAge = new GalacticAge(30, 1987, 10, 10, 971827200);
+    console.log(testAge.MercuryAgeInSeconds());
+    expect(4049280000).toEqual(testAge.MercuryAgeInSeconds());
   });
   it('should test if the VenusAgeInSeconds method correctly converts a GalacticAges earthSeconds to Venus seconds', function()
   {
-    let testAge = (30, 1987, 10, 10, 971827200);
-    expect(1567463225.80).toEqual(testAge.VenusAgeInSeconds())
+    let testAge = new GalacticAge(30, 1987, 10, 10, 971827200);
+    console.log(testAge.VenusAgeInSeconds());
+    expect(1567463225.81).toEqual(testAge.VenusAgeInSeconds());
   });
   it('should test if the MarsAgeInSeconds method correctly converts a GalacticAges earthSeconds to Mars seconds', function()
   {
-    let testAge = (30, 1987, 10, 10, 971827200);
-    expect(516929361.70).toEqual(testAge.MarsAgeInSeconds())
+    let testAge = new GalacticAge(30, 1987, 10, 10, 971827200);
+    console.log(testAge.MarsAgeInSeconds());
+    expect(516929361.7).toEqual(testAge.MarsAgeInSeconds());
   });
   it('should test if the JupiterAgeInSeconds method correctly converts a GalacticAges earthSeconds to Jupiter seconds', function()
   {
-    let testAge = (30, 1987, 10, 10, 971827200);
-    expect(81941585.16).toEqual(testAge.JupiterAgeInSeconds())
+    let testAge = new GalacticAge(30, 1987, 10, 10, 971827200);
+    console.log(testAge.JupiterAgeInSeconds());
+    expect(81941585.16).toEqual(testAge.JupiterAgeInSeconds());
   });
 
 });
