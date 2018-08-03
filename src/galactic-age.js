@@ -32,7 +32,7 @@ export class GalacticAge
     let dayDifference = ((((laterDate.earthDay - this.earthDay) * 24) * 60) * 60);
 
     let differenceInSeconds = yearDifference + monthDifference + dayDifference;
-    laterDate.earthAge = differnceInSeconds;
+    this.earthAge = differenceInSeconds;
 
     return differenceInSeconds;
   }
@@ -78,7 +78,35 @@ export class GalacticAge
   }
   FindOtherPlanetLifeExpectancies()
   {
-
+    this.mercuryLifeExpectancy = parseFloat((this.earthLifeExpectancy / 0.24).toFixed(2));
+    this.venusLifeExpectancy = parseFloat((this.earthLifeExpectancy / 0.62).toFixed(2));
+    this.marsLifeExpectancy = parseFloat((this.earthLifeExpectancy / 1.88).toFixed(2));
+    this.jupiterLifeExpectancy = parseFloat((this.earthLifeExpectancy / 11.86).toFixed(2));
+  }
+  YearsLeftToLiveOnMercury()
+  {
+    let life = (this.mercuryYears - this.mercuryLifeExpectancy).toFixed(2);
+    if(life < 0)
+    {
+      let newLife = Math.abs(life);
+      return "You have " + newLife + " Mercury Years left to live on Mercury.";
+    }
+    else
+    {
+        return "You have outlived the Mercury Life Expectancy by " + life + " years!";
+    }
+  }
+  YearsLeftToLiveOnVenus()
+  {
+    return 0;
+  }
+  YearsLeftToLiveOnMars()
+  {
+    return 0;
+  }
+  YearsLeftToLiveOnJupiter()
+  {
+    return 0;
   }
 
 }
