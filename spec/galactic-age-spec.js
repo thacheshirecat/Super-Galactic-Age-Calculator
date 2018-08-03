@@ -117,8 +117,8 @@ describe('GalacticAge', function()
     testAge2.VenusSecondsToVenusYears();
     testAge2.SetEarthLifeExpectancy(65);
     testAge2.FindOtherPlanetLifeExpectancies();
-    expect("You have 142.43 Venus Years left to live on Venus.").toEqual(testAge1.YearsLeftToLiveOnVenus());
-    expect("You have outlived the Venus Life Expectancy by 24.24 years!").toEqual(testAge2.YearsLeftToLiveOnVenus());
+    expect("You have 55.14 Venus Years left to live on Venus.").toEqual(testAge1.YearsLeftToLiveOnVenus());
+    expect("You have outlived the Venus Life Expectancy by 9.38 years!").toEqual(testAge2.YearsLeftToLiveOnVenus());
   });
   it('should test if the YearsLeftToLiveOnMars method correctly returns how many years someone younger than the life expectancy has left to live, as well as how many years past life expectancy someone older is', function()
   {
@@ -132,8 +132,8 @@ describe('GalacticAge', function()
     testAge2.MarsSecondsToMarsYears();
     testAge2.SetEarthLifeExpectancy(65);
     testAge2.FindOtherPlanetLifeExpectancies();
-    expect("You have 142.43 Mars Years left to live on Mars.").toEqual(testAge1.YearsLeftToLiveOnMars());
-    expect("You have outlived the Mars Life Expectancy by 24.24 years!").toEqual(testAge2.YearsLeftToLiveOnMars());
+    expect("You have 18.18 Mars Years left to live on Mars.").toEqual(testAge1.YearsLeftToLiveOnMars());
+    expect("You have outlived the Mars Life Expectancy by 3.1 years!").toEqual(testAge2.YearsLeftToLiveOnMars());
   });
   it('should test if the YearsLeftToLiveOnJupiter method correctly returns how many years someone younger than the life expectancy has left to live, as well as how many years past life expectancy someone older is', function()
   {
@@ -147,8 +147,7 @@ describe('GalacticAge', function()
     testAge2.JupiterSecondsToJupiterYears();
     testAge2.SetEarthLifeExpectancy(65);
     testAge2.FindOtherPlanetLifeExpectancies();
-    expect("You have 142.43 Jupiter Years left to live on Jupiter.").toEqual(testAge1.YearsLeftToLiveOnJupiter());
-    expect("You have outlived the Jupiter Life Expectancy by 24.24 years!").toEqual(testAge2.YearsLeftToLiveOnJupiter());
+    expect("You have 2.88 Jupiter Years left to live on Jupiter.").toEqual(testAge1.YearsLeftToLiveOnJupiter());
+    expect("You have outlived the Jupiter Life Expectancy by 0.49 years!").toEqual(testAge2.YearsLeftToLiveOnJupiter());
   });
-
 });
