@@ -9,8 +9,10 @@ This program was created to test the Super Galactic Age Calculator methods.
 ## Setup/Installation
 
 * Clone repository from  
-* Navigate to project folder Super-Galactic-Age-Calculator in the terminal and run npm install
-* After install completes
+* Navigate to project folder Super-Galactic-Age-Calculator in the terminal and execute "npm install"
+* After install completes execute "./node_modules/.bin/jasmine init"
+* execute "karma init"
+* execute "npm test" and view in either the console or the browser the result of the tests.
 
 ## Specs
 
@@ -21,7 +23,7 @@ This program was created to test the Super Galactic Age Calculator methods.
 * the program can convert an age from Earth years to Mars years (1.88)
 * the program can convert an age from Earth years to Jupiter years (11.86)
 * the program can calculate how many years someone has left to live on a given planet based on average life expectancy
-* the program can calculate how far past life expectancy the user is. 
+* the program can calculate how far past life expectancy the user is.
 
 ### License
 
