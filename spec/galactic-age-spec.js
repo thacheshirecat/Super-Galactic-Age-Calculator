@@ -72,5 +72,15 @@ describe('GalacticAge', function()
     testAge.JupiterSecondsToJupiterYears()
     expect(2.6).toEqual(testAge.jupiterYears);
   });
+  it('should test if the FindOtherPlanetLifeExpectancies method correctly converts a GalacticAges earthLifeExpectancy into all other planets life expectancies', function()
+  {
+    let testAge = new GalacticAge();
+    testAge.SetEarthLifeExpectancy(65);
+    testAge.FindOtherPlanetLifeExpectancies();
+    expect(0).toEqual(testAge.mercuryLifeExpectancy);
+    expect(0).toEqual(testAge.venusLifeExpectancy);
+    expect(0).toEqual(testAge.marsLifeExpectancy);
+    expect(0).toEqual(testAge.jupiterLifeExpectancy);
+  });
 
 });

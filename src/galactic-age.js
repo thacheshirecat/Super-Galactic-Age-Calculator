@@ -1,6 +1,6 @@
 export class GalacticAge
 {
-  constructor(earthAge, earthYear, earthMonth, earthDay, earthSeconds, mercurySeconds, mercuryYears, venusSeconds, venusYears, marsSeconds, marsYears, jupiterSeconds, jupiterYears, lifeExpectancy)
+  constructor(earthAge, earthYear, earthMonth, earthDay, earthSeconds, mercurySeconds, mercuryYears, venusSeconds, venusYears, marsSeconds, marsYears, jupiterSeconds, jupiterYears, earthLifeExpectancy, mercuryLifeExpectancy, venusLifeExpectancy, marsLifeExpectancy, jupiterLifeExpectancy)
   {
     this.earthAge = earthAge;
     this.earthYear = earthYear;
@@ -15,8 +15,11 @@ export class GalacticAge
     this.marsYears = marsYears;
     this.jupiterSeconds = jupiterSeconds;
     this.jupiterYears = jupiterYears;
-    this.lifeExpectancy = lifeExpectancy;
-
+    this.earthLifeExpectancy = earthLifeExpectancy;
+    this.mercuryLifeExpectancy = mercuryLifeExpectancy;
+    this.venusLifeExpectancy = venusLifeExpectancy;
+    this.marsLifeExpectancy = marsLifeExpectancy;
+    this.jupiterLifeExpectancy = jupiterLifeExpectancy;
   }
   EarthAgeToEarthSeconds()
   {
@@ -29,6 +32,7 @@ export class GalacticAge
     let dayDifference = ((((laterDate.earthDay - this.earthDay) * 24) * 60) * 60);
 
     let differenceInSeconds = yearDifference + monthDifference + dayDifference;
+    laterDate.earthAge = differnceInSeconds;
 
     return differenceInSeconds;
   }
@@ -67,6 +71,14 @@ export class GalacticAge
   JupiterSecondsToJupiterYears()
   {
     this.jupiterYears = parseFloat(((((this.jupiterSeconds / 60) / 60) / 24) / 365).toFixed(2));
+  }
+  SetEarthLifeExpectancy(age)
+  {
+    this.earthLifeExpectancy = age;
+  }
+  FindOtherPlanetLifeExpectancies()
+  {
+
   }
 
 }
