@@ -98,15 +98,42 @@ export class GalacticAge
   }
   YearsLeftToLiveOnVenus()
   {
-    return 0;
+    let life = (this.venusYears - this.venusLifeExpectancy).toFixed(2);
+    if(life < 0)
+    {
+      let newLife = Math.abs(life);
+      return "You have " + newLife + " Venus Years left to live on Venus.";
+    }
+    else
+    {
+        return "You have outlived the Venus Life Expectancy by " + life + " years!";
+    }
   }
   YearsLeftToLiveOnMars()
   {
-    return 0;
+    let life = (this.marsYears - this.marsLifeExpectancy).toFixed(2);
+    if(life < 0)
+    {
+      let newLife = Math.abs(life);
+      return "You have " + newLife + " Mars Years left to live on Mars.";
+    }
+    else
+    {
+        return "You have outlived the Mars Life Expectancy by " + life + " years!";
+    }
   }
   YearsLeftToLiveOnJupiter()
   {
-    return 0;
+    let life = (this.jupiterYears - this.jupiterLifeExpectancy).toFixed(2);
+    if(life < 0)
+    {
+      let newLife = Math.abs(life);
+      return "You have " + newLife + " Jupiter Years left to live on Jupiter.";
+    }
+    else
+    {
+        return "You have outlived the Jupiter Life Expectancy by " + life + " years!";
+    }
   }
 
 }

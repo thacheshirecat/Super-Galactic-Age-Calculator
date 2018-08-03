@@ -133,7 +133,7 @@ describe('GalacticAge', function()
     testAge2.SetEarthLifeExpectancy(65);
     testAge2.FindOtherPlanetLifeExpectancies();
     expect("You have 18.18 Mars Years left to live on Mars.").toEqual(testAge1.YearsLeftToLiveOnMars());
-    expect("You have outlived the Mars Life Expectancy by 3.1 years!").toEqual(testAge2.YearsLeftToLiveOnMars());
+    expect("You have outlived the Mars Life Expectancy by 3.10 years!").toEqual(testAge2.YearsLeftToLiveOnMars());
   });
   it('should test if the YearsLeftToLiveOnJupiter method correctly returns how many years someone younger than the life expectancy has left to live, as well as how many years past life expectancy someone older is', function()
   {
