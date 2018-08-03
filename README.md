@@ -8,7 +8,7 @@ This program was created to test the Super Galactic Age Calculator methods.
 
 ## Setup/Installation
 
-* Clone repository from  
+* Clone repository from https://github.com/thacheshirecat/Super-Galactic-Age-Calculator
 * Navigate to project folder Super-Galactic-Age-Calculator in the terminal and execute "npm install"
 * After install completes execute "./node_modules/.bin/jasmine init"
 * execute "karma init"
